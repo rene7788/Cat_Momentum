@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="login">
+                <form id="login-form" class="hidden">
+                    <input id="login-input" required type="text" maxlength="15" placeholder="What is your name?" autocomplete="off" />
+                </form>
+            </div>
+            <div class="hidden" id="content">
+                <div id="main-contents">
+                    <div id="clock" class="center">00:00:00</div>
+                    <div id="greeting" class="center"></div>
+                    <div class="todo center">
+                        <form id="todo-form">
+                            <input id="todo-input" type="text" placeholder="Enter the To Do List" autocomplete="off" />
+                        </form>
+                        <ul id="todo-list"></ul>
+                    </div>
+                </div>
+                <div id="header">
+                    <div id="quote">
+                        <span id="quote"></span><p></p>
+                        <span id="author"></span>
+                    </div>
+                </div>
+                <div id="weather">
+                    <span id="city"></span><p></p>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <script src="js/greeting.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/weather.js"></script>
+    </body>
+</html>
